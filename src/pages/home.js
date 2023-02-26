@@ -1,6 +1,27 @@
 import React from "react";
+import axios from "axios";
 
 function Home() {
+  async function getTranscription() {
+    const transcription = "";
+    try {
+      const response = await axios.post(
+        "http://127.0.0.1:5000/transcribe/",
+        // convert value to string
+        { data: "audio" },
+        {
+          headers: {
+            "Access-Control-Allow-Origin": "https://127.0.0.1:5000",
+          },
+        }
+      );
+      console.log("transcription response: ", response.data);
+    } catch (error) {
+      console.log("ERROR\n");
+      console.log(error);
+    }
+  }
+
   return (
     <div>
       <h1>Freestyle Faster.</h1>
