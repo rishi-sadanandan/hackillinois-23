@@ -1,7 +1,7 @@
 {
   "functions" : {
     "api/pyhello.py" : {
-      "runtime" : "pypi"
+      "runtime" : "Python 3.9"
     }
   }
 }
