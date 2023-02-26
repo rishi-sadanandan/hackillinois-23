@@ -4,11 +4,13 @@
 # https://vercel.com/docs/serverless-functions/introduction
     
 from http.server import BaseHTTPRequestHandler
+
 from transformers import WhisperProcessor, WhisperForConditionalGeneration
 from datasets import load_dataset
 from transformers import WhisperFeatureExtractor
 from transformers import pipeline
 whisper = pipeline('automatic-speech-recognition', model = 'openai/whisper-small.en')
+
 import soundfile as sf
 
 
