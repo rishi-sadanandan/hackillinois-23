@@ -1,0 +1,7 @@
+{
+  "functions" : {
+    "api/pyhello.py" : {
+      "runtime" : "pypi"
+    }
+  }
+}
